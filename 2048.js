@@ -51,7 +51,7 @@ function updateTile(tile, num) {
     }
 }
 
-document.addEventListener('keydown', (e) => {
+document.addEventListener('keyup', (e) => {
     if (e.code == "ArrowLeft") {
         slideLeft();
         setTwo();
@@ -70,7 +70,7 @@ document.addEventListener('keydown', (e) => {
         setTwo();
     }
     document.getElementById("score").innerText = score;
-})
+}
 
 function filterZero(row){
     return row.filter(num => num != 0); //create new array of all nums != 0

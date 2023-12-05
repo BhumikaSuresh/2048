@@ -70,7 +70,7 @@ document.addEventListener('keyup', (e) => {
         setTwo();
     }
     document.getElementById("score").innerText = score;
-}
+})
 
 function filterZero(row){
     return row.filter(num => num != 0); //create new array of all nums != 0
